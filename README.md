@@ -4,7 +4,7 @@ It provides a selection of essential food items like bread, lunch meat, milk, so
 
 Users can easily browse, select, and add items to a virtual shopping cart. Upon checkout, the Online Store generates a detailed receipt outlining the number of each item purchased and a clear breakdown of the total cost, including taxes.
 
-The current system for the program functions as a shopping platform, providing users with the ability to browse and select items from a list. Primarily focused on presenting available products such as bread, lunch meat, milk, soda, paper plates, and mayonnaise, the existing system allows users to add selected items to a virtual shopping cart. Once users have completed their selection process, they can proceed to a checkout feature by clicking "9" or "Q", where the chosen items are confirmed for purchase.
+The current system for the program functions as a shopping platform, providing users with the ability to browse and select items from a list. Primarily focused on presenting available products such as bread, lunch meat, milk, soda, paper plates, and mayonnaise, the existing system allows users to add selected items to a virtual shopping cart. Once users have completed their selection process, they can proceed to a checkout feature by clicking "q" or "Q", where the chosen items are confirmed for purchase.
 
 Project Specification/ Function Modules
 

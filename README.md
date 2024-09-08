@@ -17,7 +17,7 @@ Project Specification/ Function Modules
 3. Taxed.java: extends the Product class
 - The application adds a "tax" (price) to the existing product with an existing price tag, essentially increasing the price of the original product.
 
-﻿﻿﻿4. Taxfree.java: extends the Product class
+4. Taxfree.java: extends the Product class
 - The application declares a product as not having a "tax", if the product doesn't contain a tax.
 
 5. ﻿﻿﻿Receipt.java: Prints details of receipt

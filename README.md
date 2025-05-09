@@ -1,24 +1,100 @@
-The Online Store is a Java program designed to emulate the functionality of a typical convenience store.
+# 🛒 Online Store
 
-It provides a selection of essential food items like bread, lunch meat, milk, soda, paper plates, and mayonnaise.
+An interactive Java-based console application that simulates the operations of a small convenience store. The project was developed as part of CSE 1325 (Object-Oriented Programming) at the University of Texas at Arlington. This modular application showcases object-oriented design principles and offers functionalities like browsing products, applying tax rules, and generating receipts.
 
-Users can easily browse, select, and add items to a virtual shopping cart. Upon checkout, the Online Store generates a detailed receipt outlining the number of each item purchased and a clear breakdown of the total cost, including taxes.
+---
 
-The current system for the program functions as a shopping platform, providing users with the ability to browse and select items from a list. Primarily focused on presenting available products such as bread, lunch meat, milk, soda, paper plates, and mayonnaise, the existing system allows users to add selected items to a virtual shopping cart. Once users have completed their selection process, they can proceed to a checkout feature by clicking "q" or "Q", where the chosen items are confirmed for purchase.
+## 📂 Project Structure
 
-Project Specification/ Function Modules
+The project is composed of six key Java classes:
 
-1. Store java class: Considered the Main class of the program
-- The application employs techniques by printing information (list of products) within the terminal, ensuring a seamless and user-friendly experience; with the addition of scanner input of adding the items you would like to add to your virtual shopping cart.
+### `1. Store.java` *(Main Class)*
+- **Role:** Entry point of the program and handles the main loop for user interaction.
+- **Functionality:**
+  - Displays available products to the user.
+  - Accepts user input to add items to a shopping cart.
+  - Allows checkout by pressing `q` or `Q`.
+  - Delegates receipt generation to `Receipt.java`.
 
-2. Product.java class: Creates the object "product"
-- The application allows you to create objects (products) each one gets its own name and a price tag. This way, you can keep everything organized and manage your virtual shopping cart.
+### `2. Product.java`
+- **Role:** Abstract representation of a product in the store.
+- **Attributes:**
+  - `name` – name of the product.
+  - `price` – base price before tax.
+- **Methods:**
+  - `getName()`, `getPrice()`
+  - `toString()` – for formatted display.
 
-3. Taxed.java: extends the Product class
-- The application adds a "tax" (price) to the existing product with an existing price tag, essentially increasing the price of the original product.
+### `3. Taxed.java`
+- **Extends:** `Product`
+- **Role:** Represents a product that includes tax.
+- **Functionality:**
+  - Adds tax percentage (e.g., 8.25%) to the base price.
+  - Overrides `getPrice()` to return price including tax.
 
-4. Taxfree.java: extends the Product class
-- The application declares a product as not having a "tax", if the product doesn't contain a tax.
+### `4. Taxfree.java`
+- **Extends:** `Product`
+- **Role:** Represents a product that is exempt from tax.
+- **Functionality:**
+  - Inherits the price as-is from `Product.java`.
+  - No override needed for tax calculations.
 
-5. ﻿﻿﻿Receipt.java: Prints details of receipt
-- The application combines the prices of all items, calculates a total price, and generates a detailed receipt in a user-friendly format. This receipt includes the quantity of each item, and at the end, it declares the overall total price. Additionally, the system automatically produces a text file using File Writer, ensuring a convenient record of the transaction details.
+### `5. Receipt.java`
+- **Role:** Compiles and prints the purchase summary after checkout.
+- **Functionality:**
+  - Tallies all selected products and quantities.
+  - Calculates total cost.
+  - Formats and prints a detailed receipt.
+  - Creates a receipt text file using Java `FileWriter` to store transaction history.
+
+### `6. README.md`
+- **Role:** You are reading it! Provides documentation for the project.
+
+---
+
+## 📦 Features
+
+- Browse a list of predefined products (e.g., milk, soda, bread, etc.).
+- Items are classified into taxed or tax-free categories.
+- Add multiple items to the shopping cart.
+- Checkout via keyboard input.
+- Dynamically generates an itemized receipt both on the console and as a `.txt` file.
+- Clean object-oriented design with abstraction and inheritance.
+
+---
+
+## 🖥️ Terminal-Only UI
+
+> There is **no GUI** interface. The application runs entirely in a terminal window.
+
+- **Why Terminal?**
+  - The goal was to focus on core object-oriented programming skills and file I/O handling in Java, not front-end development.
+
+---
+
+## 🧪 Sample Product List
+
+| Product       | Category | Price | Taxed? |
+|---------------|----------|-------|--------|
+| Milk          | Dairy    | 3.00  | No     |
+| Soda          | Beverage | 1.50  | Yes    |
+| Bread         | Bakery   | 2.50  | No     |
+| Lunch Meat    | Deli     | 4.25  | Yes    |
+| Paper Plates  | Utility  | 2.75  | Yes    |
+| Mayonnaise    | Grocery  | 3.50  | Yes    |
+
+---
+
+## ▶️ How to Run
+
+### ✅ Prerequisites
+- Java JDK 8 or higher
+- Terminal or command prompt
+- Text editor or IDE (e.g., IntelliJ, VS Code, Eclipse)
+
+### 💻 Steps
+
+1. **Clone or Download the Repository**
+   ```bash
+   git clone https://github.com/devpat0304/Online-Store.git
+   cd Online-Store

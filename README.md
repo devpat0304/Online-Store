@@ -1,6 +1,6 @@
 # 🛒 Online Store
 
-![Online Store Banner](image.png)
+<img src="image.png" alt="Online Store Banner" width="500"/>
 
 An **interactive Java-based console application** that simulates the core operations of a small convenience store 🏪. This project was developed as part of **CSE 1325: Object-Oriented Programming** at **The University of Texas at Arlington** 🎓
 

@@ -186,14 +186,141 @@ These products can be typed exactly as shown during runtime to add them to your 
 
 ## ▶️ How to Run
 
+This section provides a step-by-step walkthrough for compiling and executing the **Online Store** Java project locally on your machine.
+
+---
+
 ### ✅ Prerequisites
-- Java JDK 8 or higher
-- Terminal or command prompt
-- Text editor or IDE (e.g., IntelliJ, VS Code, Eclipse)
 
-### 💻 Steps
+Make sure the following tools and setups are ready on your computer before running the project:
 
-1. **Clone or Download the Repository**
-   ```bash
-   git clone https://github.com/devpat0304/Online-Store.git
-   cd Online-Store
+- ☕ **Java Development Kit (JDK)** – Version 8 or higher  
+  👉 [Download Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
+
+- 💻 **Command Line Interface**  
+  - Windows: Command Prompt or PowerShell  
+  - macOS/Linux: Terminal
+
+- 🧑‍💻 **Text Editor or IDE** (Optional but recommended)  
+  Examples:
+  - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+  - [Visual Studio Code](https://code.visualstudio.com/)
+  - [Eclipse](https://www.eclipse.org/)
+
+---
+
+### 💻 Steps to Run the Project
+
+#### 📥 1. Clone or Download the Repository
+
+You can either clone the repository using Git or download it manually as a ZIP.
+
+**Option A: Using Git**
+```bash
+git clone https://github.com/devpat0304/Online-Store.git
+cd Online-Store
+```
+
+## 🧰 Option B: Manual Download and Execution
+
+If you do not have Git installed or prefer a manual setup, follow the steps below to download, compile, and run the **Online Store** Java application.
+
+---
+
+### 📥 1. Download the Project ZIP
+
+1. Navigate to the GitHub repository: [Online Store GitHub](https://github.com/devpat0304/Online-Store)
+2. Click the green **`Code`** button.
+3. Select **`Download ZIP`**.
+4. Extract the contents to a folder of your choice on your computer.
+
+---
+
+### 💻 2. Open Terminal and Navigate to the Project Folder
+
+Open your terminal (Command Prompt, PowerShell, Terminal, etc.) and use the `cd` command to enter the extracted folder.
+
+```bash
+cd path/to/Online-Store
+```
+
+## ▶️ Running the Project (Manual Method)
+
+Follow these instructions to compile and run the **Online Store** Java application manually from the terminal.
+
+---
+
+### 🗂️ Ensure All Required Files Are Present
+
+Make sure all the following `.java` files are located in the **same directory**:
+
+- `Store.java`
+- `Product.java`
+- `Taxed.java`
+- `Taxfree.java`
+- `Receipt.java`
+
+---
+
+### ⚙️ 3. Compile the Java Source Files
+
+Open your terminal in the folder where the above files are located, and run:
+
+```bash
+javac *.java
+```
+
+## ▶️ 4. Run the Application
+
+After compiling the source code, start the application by running the following command in your terminal:
+
+```bash
+java Store
+```
+
+## 🧑‍🏫 5. Using the Application
+
+Once the program is running:
+
+- 📝 You will be prompted to enter product names.
+- 🛍️ To add an item to your cart, type the name of the product (e.g., `Soda`) and press `Enter`.
+- ➕ You can add as many products as you like by repeating this step.
+- 🧾 To proceed to checkout, type:
+
+```text
+q
+```
+
+## 🧾 What Happens at Checkout
+
+When you proceed to checkout, the system will perform the following actions:
+
+- 🖨️ **Print** a detailed receipt directly in the terminal for immediate reference.
+- 💾 **Generate** a file named `receipt.txt` inside your project folder to store the transaction permanently.
+
+---
+
+## 📄 6. View the Receipt File
+
+After checkout is complete:
+
+1. Navigate to your project folder.
+2. Locate and open the file named `receipt.txt` using any text editor, such as:
+   - Visual Studio Code (VS Code)
+   - Notepad
+   - Sublime Text
+   - Any IDE or plain-text viewer
+
+---
+
+### 🧾 The Receipt Contains:
+
+- ✅ A complete list of all purchased products and the quantity of each.
+- 💲 Individual prices for each item and the calculated total cost.
+- 🕒 A timestamp showing the exact date and time when the purchase was completed.
+
+This receipt serves both as a confirmation for the current session and as a saved record for future reference.
+
+
+
+

@@ -159,14 +159,28 @@ This Markdown file serves as the project's documentation hub, providing:
 
 ## 🧪 Sample Product List
 
-| Product       | Category | Price | Taxed? |
-|---------------|----------|-------|--------|
-| Milk          | Dairy    | 3.00  | No     |
-| Soda          | Beverage | 1.50  | Yes    |
-| Bread         | Bakery   | 2.50  | No     |
-| Lunch Meat    | Deli     | 4.25  | Yes    |
-| Paper Plates  | Utility  | 2.75  | Yes    |
-| Mayonnaise    | Grocery  | 3.50  | Yes    |
+The Online Store provides a simple but diverse inventory of common convenience store items. Each product falls into a specific category and may or may not be subject to sales tax, depending on its type. This system is designed to reflect real-world tax logic in many regions (e.g., tax exemptions on essential groceries like dairy and bakery items).
+
+Below is the default product list available in the store:
+
+| 🛍️ Product       | 🏷️ Category   | 💵 Price (USD) | 🧾 Taxed? |
+|------------------|---------------|----------------|-----------|
+| 🥛 Milk          | Dairy         | $3.00          | ❌ No      |
+| 🥤 Soda          | Beverage      | $1.50          | ✅ Yes     |
+| 🍞 Bread         | Bakery        | $2.50          | ❌ No      |
+| 🥩 Lunch Meat    | Deli          | $4.25          | ✅ Yes     |
+| 🍽️ Paper Plates | Utility       | $2.75          | ✅ Yes     |
+| 🧴 Mayonnaise    | Grocery       | $3.50          | ✅ Yes     |
+
+---
+
+### 📌 Notes:
+- ❌ **Tax-Free Items:** Milk and bread are treated as essentials and are exempt from tax.
+- ✅ **Taxable Items:** Soda, lunch meat, paper plates, and mayonnaise are taxed at the configured rate (e.g., 8.25%).
+- The tax logic is implemented using subclassing: `Taxed.java` for taxable items and `Taxfree.java` for exempt items.
+
+These products can be typed exactly as shown during runtime to add them to your shopping cart. The list is customizable in the code and can be extended by modifying the `Store.java` file.
+
 
 ---
 

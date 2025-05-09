@@ -142,68 +142,60 @@ This Markdown file serves as the project's documentation hub, providing:
 - Items are classified into taxed or tax-free categories.
 - Add multiple items to the shopping cart.
 - Checkout via keyboard input.
-- Dynamically generates an itemized receipt both on the console and as a `.txt` file.
-- Clean object-oriented design with abstraction and inheritance.
+- Automatically generates an itemized receipt both in the console and as a `.txt` file.
+- Clean object-oriented design following principles like abstraction and inheritance.
 
 ---
 
 ## 🖥️ Terminal-Only UI
 
-> There is **no GUI** interface. The application runs entirely in a terminal window.
+> ⚠️ There is **no graphical user interface (GUI)**. The application runs entirely within the terminal.
 
-- **Why Terminal?**
-  - The goal was to focus on core object-oriented programming skills and file I/O handling in Java, not front-end development.
+**Why Terminal-Based?**
+- The goal is to emphasize core Java concepts like OOP, file I/O, and terminal-based interaction rather than front-end development.
 
 ---
 
 ## 🧪 Sample Product List
 
-The Online Store provides a simple but diverse inventory of common convenience store items. Each product falls into a specific category and may or may not be subject to sales tax, depending on its type. This system is designed to reflect real-world tax logic in many regions (e.g., tax exemptions on essential groceries like dairy and bakery items).
-
-Below is the default product list available in the store:
+The Online Store includes a variety of common convenience store items. Each item falls into a specific category and may or may not be taxed, reflecting typical retail practices.
 
 | 🛍️ Product       | 🏷️ Category   | 💵 Price (USD) | 🧾 Taxed? |
 |------------------|---------------|----------------|-----------|
-| 🥛 Milk          | Dairy         | $3.00          | ❌ No      |
-| 🥤 Soda          | Beverage      | $1.50          | ✅ Yes     |
-| 🍞 Bread         | Bakery        | $2.50          | ❌ No      |
-| 🥩 Lunch Meat    | Deli          | $4.25          | ✅ Yes     |
-| 🍽️ Paper Plates | Utility       | $2.75          | ✅ Yes     |
-| 🧴 Mayonnaise    | Grocery       | $3.50          | ✅ Yes     |
-
----
+| 🥛 Milk          | Dairy         | $3.00          | ❌ No     |
+| 🥤 Soda          | Beverage      | $1.50          | ✅ Yes    |
+| 🍞 Bread         | Bakery        | $2.50          | ❌ No     |
+| 🥩 Lunch Meat    | Deli          | $4.25          | ✅ Yes    |
+| 🍽️ Paper Plates | Utility       | $2.75          | ✅ Yes    |
+| 🧴 Mayonnaise    | Grocery       | $3.50          | ✅ Yes    |
 
 ### 📌 Notes:
 - ❌ **Tax-Free Items:** Milk and bread are treated as essentials and are exempt from tax.
-- ✅ **Taxable Items:** Soda, lunch meat, paper plates, and mayonnaise are taxed at the configured rate (e.g., 8.25%).
-- The tax logic is implemented using subclassing: `Taxed.java` for taxable items and `Taxfree.java` for exempt items.
+- ✅ **Taxable Items:** Soda, lunch meat, paper plates, and mayonnaise include tax.
+- Tax logic is implemented via inheritance using `Taxed.java` and `Taxfree.java`.
 
-These products can be typed exactly as shown during runtime to add them to your shopping cart. The list is customizable in the code and can be extended by modifying the `Store.java` file.
-
+You can modify or extend this product list directly in `Store.java`.
 
 ---
 
 ## ▶️ How to Run
 
-This section provides a step-by-step walkthrough for compiling and executing the **Online Store** Java project locally on your machine.
-
----
+This section explains how to compile and run the **Online Store** project locally.
 
 ### ✅ Prerequisites
 
-Make sure the following tools and setups are ready on your computer before running the project:
+Ensure the following tools are installed:
 
-- ☕ **Java Development Kit (JDK)** – Version 8 or higher  
-  👉 [Download Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
+- ☕ **Java JDK 8 or higher**  
+  👉 [Download Java](https://www.oracle.com/java/technologies/javase-downloads.html)
 
-- 💻 **Command Line Interface**  
+- 💻 **Terminal or Command Line Interface**  
   - Windows: Command Prompt or PowerShell  
   - macOS/Linux: Terminal
 
-- 🧑‍💻 **Text Editor or IDE** (Optional but recommended)  
-  Examples:
-  - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-  - [Visual Studio Code](https://code.visualstudio.com/)
+- 🧑‍💻 **Text Editor or IDE** (recommended)  
+  - [IntelliJ IDEA](https://www.jetbrains.com/idea/)  
+  - [Visual Studio Code](https://code.visualstudio.com/)  
   - [Eclipse](https://www.eclipse.org/)
 
 ---
@@ -211,8 +203,6 @@ Make sure the following tools and setups are ready on your computer before runni
 ### 💻 Steps to Run the Project
 
 #### 📥 1. Clone or Download the Repository
-
-You can either clone the repository using Git or download it manually as a ZIP.
 
 **Option A: Using Git**
 ```bash
@@ -222,104 +212,94 @@ cd Online-Store
 
 ## 🧰 Option B: Manual Download and Execution
 
-If you do not have Git installed or prefer a manual setup, follow the steps below to download, compile, and run the **Online Store** Java application.
+If you prefer not to use Git:
 
----
+### 📥 Manual Download
 
-### 📥 1. Download the Project ZIP
+1. Go to the GitHub repository: [Online Store GitHub](https://github.com/devpat0304/Online-Store)
+2. Click the green **`Code`** button
+3. Select **`Download ZIP`**
+4. Extract the contents to a folder on your machine
 
-1. Navigate to the GitHub repository: [Online Store GitHub](https://github.com/devpat0304/Online-Store)
-2. Click the green **`Code`** button.
-3. Select **`Download ZIP`**.
-4. Extract the contents to a folder of your choice on your computer.
+### 💻 Navigate to Project Folder
 
----
-
-### 💻 2. Open Terminal and Navigate to the Project Folder
-
-Open your terminal (Command Prompt, PowerShell, Terminal, etc.) and use the `cd` command to enter the extracted folder.
-
+Open a terminal window and navigate to the extracted folder:
 ```bash
 cd path/to/Online-Store
 ```
 
-## ▶️ Running the Project (Manual Method)
-
-Follow these instructions to compile and run the **Online Store** Java application manually from the terminal.
-
 ---
+
+## ▶️ Running the Project (Manual Method)
 
 ### 🗂️ Ensure All Required Files Are Present
 
-Make sure all the following `.java` files are located in the **same directory**:
-
+Make sure the following `.java` files are located in the same folder:
 - `Store.java`
 - `Product.java`
 - `Taxed.java`
 - `Taxfree.java`
 - `Receipt.java`
 
----
-
 ### ⚙️ 3. Compile the Java Source Files
 
-Open your terminal in the folder where the above files are located, and run:
-
+Compile all the files using:
 ```bash
 javac *.java
 ```
 
 ## ▶️ 4. Run the Application
 
-After compiling the source code, start the application by running the following command in your terminal:
-
+Start the application with:
 ```bash
 java Store
 ```
+You should now see the Online Store interface in the terminal.
+
+---
 
 ## 🧑‍🏫 5. Using the Application
 
 Once the program is running:
 
-- 📝 You will be prompted to enter product names.
-- 🛍️ To add an item to your cart, type the name of the product (e.g., `Soda`) and press `Enter`.
-- ➕ You can add as many products as you like by repeating this step.
-- 🧾 To proceed to checkout, type:
+- 📝 You'll be prompted to enter product names.
+- 🛍️ To add an item, type its name (e.g., `Soda`) and press `Enter`.
+- ➕ You may continue adding items one by one.
+- 🧾 To checkout, type:
 
 ```text
 q
 ```
+or
+```text
+Q
+```
+
+---
 
 ## 🧾 What Happens at Checkout
 
-When you proceed to checkout, the system will perform the following actions:
+Once you checkout:
 
-- 🖨️ **Print** a detailed receipt directly in the terminal for immediate reference.
-- 💾 **Generate** a file named `receipt.txt` inside your project folder to store the transaction permanently.
+- 🖨️ **A receipt is printed** directly in the terminal.
+- 💾 **A file named `receipt.txt`** is created in your project folder for permanent record.
 
 ---
 
 ## 📄 6. View the Receipt File
 
-After checkout is complete:
+After checkout:
 
-1. Navigate to your project folder.
-2. Locate and open the file named `receipt.txt` using any text editor, such as:
-   - Visual Studio Code (VS Code)
+1. Open your project folder
+2. Locate and open `receipt.txt` using a text editor like:
+   - Visual Studio Code
    - Notepad
    - Sublime Text
-   - Any IDE or plain-text viewer
 
----
+### 🧾 Receipt Includes:
 
-### 🧾 The Receipt Contains:
+- ✅ Purchased items with their quantities
+- 💲 Individual prices and total cost
+- 🕒 Date and time of transaction
 
-- ✅ A complete list of all purchased products and the quantity of each.
-- 💲 Individual prices for each item and the calculated total cost.
-- 🕒 A timestamp showing the exact date and time when the purchase was completed.
-
-This receipt serves both as a confirmation for the current session and as a saved record for future reference.
-
-
-
-
+The receipt provides a summary of the session and a saved transaction log.

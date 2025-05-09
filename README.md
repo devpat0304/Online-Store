@@ -28,7 +28,7 @@ Despite being a console-based application, the project simulates the essence of 
 - 📝 Sample receipts
 - 🧾 A comprehensive README for setup and instructions
 
-⬇️ Scroll down to explore the project structure, features, usage guide, and future enhancement ideas!
+🔽 Scroll down to explore the project structure, features, usage guide, and future enhancement ideas!
 
 ---
 
@@ -134,8 +134,7 @@ This Markdown file serves as the project's documentation hub, providing:
 - Future improvement ideas.
 
 </details>
-
----
+"""
 
 ## 📦 Features
 

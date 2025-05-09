@@ -303,3 +303,33 @@ After checkout:
 - 🕒 Date and time of transaction
 
 The receipt provides a summary of the session and a saved transaction log.
+
+---
+
+## 🎯 Learning Objectives
+
+This project was designed to reinforce the following Java and software development skills:
+
+- Object-oriented design using abstraction and inheritance
+- Java I/O for writing external files
+- Console-based interaction and user input handling
+- Modular class separation and responsibility management
+- Compilation and execution workflows for Java applications
+
+---
+
+## 🚀 Future Enhancements
+
+- Add persistent product inventory with file/database storage
+- Implement a GUI using JavaFX or Swing
+- Include product quantity tracking (stock levels)
+- Add discount or promo code logic
+- Support multilingual output
+
+---
+
+🙏 Thank You
+
+Thank you for taking the time to explore the Online Store project! This application was a fun and rewarding experience to build while learning Java and object-oriented programming. I hope you find the code educational, useful, or even inspiring for your own projects.
+
+Feel free to fork, star ⭐, or share feedback. Happy coding! 💻🛍️

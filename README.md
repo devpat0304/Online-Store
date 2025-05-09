@@ -6,49 +6,103 @@ An interactive Java-based console application that simulates the operations of a
 
 ## 📂 Project Structure
 
-The project is composed of six key Java classes:
+The project is composed of six key Java classes, each fulfilling a distinct responsibility in this object-oriented design. Together, they simulate a virtual shopping experience using console-based interaction and file generation.
 
-### `1. Store.java` *(Main Class)*
-- **Role:** Entry point of the program and handles the main loop for user interaction.
-- **Functionality:**
-  - Displays available products to the user.
-  - Accepts user input to add items to a shopping cart.
-  - Allows checkout by pressing `q` or `Q`.
-  - Delegates receipt generation to `Receipt.java`.
+---
 
-### `2. Product.java`
-- **Role:** Abstract representation of a product in the store.
-- **Attributes:**
-  - `name` – name of the product.
-  - `price` – base price before tax.
-- **Methods:**
-  - `getName()`, `getPrice()`
-  - `toString()` – for formatted display.
+### 1. `Store.java` – 🧠 Main Controller (Entry Point)
+**Role:**  
+Serves as the main entry point of the application and acts as the central hub for all user interaction and system flow control.
 
-### `3. Taxed.java`
-- **Extends:** `Product`
-- **Role:** Represents a product that includes tax.
-- **Functionality:**
-  - Adds tax percentage (e.g., 8.25%) to the base price.
-  - Overrides `getPrice()` to return price including tax.
+**Key Responsibilities:**
+- Initializes the list of products available in the store.
+- Presents users with a clean menu-like terminal interface to view and add items.
+- Accepts user input using `Scanner` to:
+  - Add items to a virtual shopping cart.
+  - Exit and trigger the checkout process by entering `q` or `Q`.
+- Manages an internal list of selected `Product` objects (both taxed and tax-free).
+- Delegates the final receipt generation to the `Receipt.java` class.
 
-### `4. Taxfree.java`
-- **Extends:** `Product`
-- **Role:** Represents a product that is exempt from tax.
-- **Functionality:**
-  - Inherits the price as-is from `Product.java`.
-  - No override needed for tax calculations.
+---
 
-### `5. Receipt.java`
-- **Role:** Compiles and prints the purchase summary after checkout.
-- **Functionality:**
-  - Tallies all selected products and quantities.
-  - Calculates total cost.
-  - Formats and prints a detailed receipt.
-  - Creates a receipt text file using Java `FileWriter` to store transaction history.
+### 2. `Product.java` – 🧱 Base Class (Abstract Product)
+**Role:**  
+Provides a blueprint for defining all store products, using encapsulation and abstraction.
 
-### `6. README.md`
-- **Role:** You are reading it! Provides documentation for the project.
+**Attributes:**
+- `name` – The name of the product (e.g., "Milk").
+- `price` – The base price before tax is applied.
+
+**Methods:**
+- `getName()` – Returns the name of the product.
+- `getPrice()` – Returns the base price (to be overridden in child classes if needed).
+- `toString()` – Provides a clean, readable string representation of the product for display.
+
+This class forms the backbone of both taxed and tax-free product types by enabling polymorphic behavior.
+
+---
+
+### 3. `Taxed.java` – 💰 Taxable Product
+**Extends:** `Product.java`  
+**Role:**  
+Represents a product that includes tax in its final cost.
+
+**Functionality:**
+- Applies a fixed tax percentage (typically 8.25%) to the product price.
+- Overrides `getPrice()` from `Product.java` to calculate the tax-inclusive price.
+- Still retains all behaviors from the base `Product` class.
+
+Used for items like soda, lunch meat, and paper plates that are legally subject to sales tax.
+
+---
+
+### 4. `Taxfree.java` – 🆓 Tax-Free Product
+**Extends:** `Product.java`  
+**Role:**  
+Represents a product exempt from sales tax.
+
+**Functionality:**
+- Inherits the base price and all methods directly from `Product.java`.
+- Does not override `getPrice()`, as no additional tax is applied.
+- Used for essential food items like milk or bread.
+
+This class simplifies handling tax-exempt items while still fitting into the polymorphic product system.
+
+---
+
+### 5. `Receipt.java` – 🧾 Receipt Generator
+**Role:**  
+Handles the compilation and output of the final transaction receipt after user checkout.
+
+**Functionality:**
+- Receives the list of purchased items from `Store.java`.
+- Aggregates products and quantities into a formatted summary.
+- Calculates and displays:
+  - Quantity of each item.
+  - Individual and total prices.
+  - Final total including tax where applicable.
+- Outputs the receipt in two ways:
+  - **Console:** Instant terminal display.
+  - **File:** Generates a `receipt.txt` file using Java’s `FileWriter` for permanent storage.
+
+Also includes a timestamp in the receipt for proper record-keeping.
+
+---
+
+### 6. `README.md` – 📖 Documentation
+**Role:**  
+You are reading it!
+
+This Markdown file serves as the project's documentation hub, providing:
+- An overview of the project’s goals and scope.
+- Detailed component breakdowns.
+- Setup and usage instructions.
+- Future improvement ideas.
+- Credit to developers and references used.
+
+---
+
+Each class in this project adheres to **object-oriented principles** such as encapsulation, inheritance, and separation of concerns, enabling code reusability and maintainability throughout the application.
 
 ---
 

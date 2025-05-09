@@ -1,6 +1,7 @@
 # 🛒 Online Store
 
 An interactive Java-based console application that simulates the operations of a small convenience store. The project was developed as part of CSE 1325 (Object-Oriented Programming) at the University of Texas at Arlington. This modular application showcases object-oriented design principles and offers functionalities like browsing products, applying tax rules, and generating receipts.
+![Demo](https://media.giphy.com/media/l4FGuhL4U2WyjdkaY/giphy.gif)
 
 ---
 

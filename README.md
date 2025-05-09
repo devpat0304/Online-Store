@@ -328,8 +328,8 @@ This project was designed to reinforce the following Java and software developme
 
 ---
 
-🙏 Thank You
+## 🙏 Thank You
 
-Thank you for taking the time to explore the Online Store project! This application was a fun and rewarding experience to build while learning Java and object-oriented programming. I hope you find the code educational, useful, or even inspiring for your own projects.
-
-Feel free to fork, star ⭐, or share feedback. Happy coding! 💻🛍️
+Thank you for taking the time to explore this project!  
+I hope you find it insightful, educational, or simply a fun way to see Java in action.  
+Feel free to fork, modify, or contribute — and happy coding! 💻✨

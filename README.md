@@ -1,6 +1,34 @@
 # 🛒 Online Store
 
-An interactive Java-based console application that simulates the operations of a small convenience store. The project was developed as part of CSE 1325 (Object-Oriented Programming) at the University of Texas at Arlington. This modular application showcases object-oriented design principles and offers functionalities like browsing products, applying tax rules, and generating receipts.
+An **interactive Java-based console application** that simulates the core operations of a small convenience store 🏪. This project was developed as part of **CSE 1325: Object-Oriented Programming** at **The University of Texas at Arlington** 🎓 by Group #30.
+
+The **Online Store** application allows users to browse a selection of virtual products — such as 🍞 bread, 🥛 milk, 🥤 soda, and more — and add them to a digital shopping cart 🛍️. It incorporates **object-oriented principles** like **inheritance**, **polymorphism**, and **modular design**, with separate classes for handling products, tax rules, checkout, and receipt generation.
+
+### 🔧 Key Features:
+- Differentiation between **taxable** and **tax-free** items 💸
+- Automatic **tax calculation** based on product type
+- A fully **text-based user interface** for terminal usage 💻
+- **Dynamic receipt generation** in both console output and a persistent `.txt` file using Java’s file I/O operations 🧾
+- Intuitive product selection and checkout experience using simple keyboard inputs ⌨️
+
+This project emphasizes clean architecture and educational implementation of **Java fundamentals** such as:
+- 🧱 Class hierarchies
+- 🔁 Method overriding
+- 🗂️ File handling
+- 🧍‍♂️ User input via `Scanner`
+- 🧮 Dynamic lists using `ArrayList`
+
+Despite being a console-based application, the project simulates the essence of real-world store functionality 🛒 with logical design patterns and modular code organization, making it a valuable learning experience for students aiming to strengthen their Java and object-oriented programming skills.
+
+---
+
+### 📦 This Repository Contains:
+- 📁 Source code (`.java` files)
+- 📄 Project documentation
+- 📝 Sample receipts
+- 🧾 A comprehensive README for setup and instructions
+
+⬇️ Scroll down to explore the project structure, features, usage guide, and future enhancement ideas!
 
 ---
 
@@ -104,7 +132,6 @@ This Markdown file serves as the project's documentation hub, providing:
 - Detailed component breakdowns.
 - Setup and usage instructions.
 - Future improvement ideas.
-- Credit to developers and references used.
 
 </details>
 

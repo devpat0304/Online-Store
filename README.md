@@ -1,6 +1,6 @@
 # 🛒 Online Store
 
-An **interactive Java-based console application** that simulates the core operations of a small convenience store 🏪. This project was developed as part of **CSE 1325: Object-Oriented Programming** at **The University of Texas at Arlington** 🎓 by Group #30.
+An **interactive Java-based console application** that simulates the core operations of a small convenience store 🏪. This project was developed as part of **CSE 1325: Object-Oriented Programming** at **The University of Texas at Arlington** 🎓
 
 The **Online Store** application allows users to browse a selection of virtual products — such as 🍞 bread, 🥛 milk, 🥤 soda, and more — and add them to a digital shopping cart 🛍️. It incorporates **object-oriented principles** like **inheritance**, **polymorphism**, and **modular design**, with separate classes for handling products, tax rules, checkout, and receipt generation.
 
@@ -18,7 +18,7 @@ This project emphasizes clean architecture and educational implementation of **J
 - 🧍‍♂️ User input via `Scanner`
 - 🧮 Dynamic lists using `ArrayList`
 
-Despite being a console-based application, the project simulates the essence of real-world store functionality 🛒 with logical design patterns and modular code organization, making it a valuable learning experience for students aiming to strengthen their Java and object-oriented programming skills.
+Despite being a console-based application, the project simulates the essence of real-world store functionality 🛒 with logical design patterns and modular code organization, making it a valuable learning experience for students like me aiming to strengthen their Java and object-oriented programming skills.
 
 ---
 

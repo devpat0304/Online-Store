@@ -35,10 +35,23 @@ Despite being a console-based application, the project simulates the essence of 
 ---
 
 ## 🧰 Technologies & Tools Used
+
+### 💻 Languages
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+### 🧪 Tools & Frameworks
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Java Scanner](https://img.shields.io/badge/Java%20Scanner-006666.svg?style=for-the-badge&logo=java&logoColor=white)
+
+### 📚 Core Libraries & APIs
+![Java I/O](https://img.shields.io/badge/Java%20IO-FF8C00.svg?style=for-the-badge&logo=java&logoColor=white)
+![FileWriter](https://img.shields.io/badge/FileWriter-006400.svg?style=for-the-badge&logo=java&logoColor=white)
+
+### 🧪 Testing & Execution
+Manual testing through terminal-based interaction and receipt verification in `.txt` output.
+
+> 🔍 This project focuses on mastering object-oriented Java fundamentals including abstraction, inheritance, and file-based output handling within a structured console app.
+
 
 ---
 
